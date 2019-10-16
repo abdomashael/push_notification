@@ -15,6 +15,8 @@ router.get('/', function(req, res, next) {
     to: req.headers.to, // required fill with device token or topics
     collapse_key: 'your_collapse_key',
     data: {
+      title:req.headers.title,
+      body: req.headers.body,
       info: req.headers.info
     },
     notification: {
