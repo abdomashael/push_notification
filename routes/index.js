@@ -15,11 +15,11 @@ router.get('/', function(req, res, next) {
     to: req.headers.to, // required fill with device token or topics
     collapse_key: 'your_collapse_key',
     data: {
-      your_custom_data_key: 'your_custom_data_value'
+      info: req.headers.info
     },
     notification: {
-      title: 'Title of your push notification',
-      body: 'Body of your push notification'
+      title: req.headers.title,
+      body: req.headers.body
     }
   };
 
