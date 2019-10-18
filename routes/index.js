@@ -17,7 +17,7 @@ router.get('/', function (req, res, next) {
         data: {
             title: req.headers.title,
             body: req.headers.body,
-            icon: 'ic_launcher',
+            icon: 'https://drive.google.com/file/d/1owrjULeYG80iHdoWjl-d1z0USF9cjGqf/view?usp=sharing',
             info: req.headers.info
         },
         notification: {
