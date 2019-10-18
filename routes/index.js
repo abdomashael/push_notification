@@ -32,7 +32,9 @@ router.get('/', function(req, res, next) {
           details:  response});
       })
       .catch(function(err){
-        res.send("Something has gone wrong!");
+        res.send({ status: "Something has gone wrong! ",
+          error:  err});
+
       })
 });
 
