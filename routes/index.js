@@ -17,7 +17,7 @@ router.get('/', function (req, res, next) {
         data: {
             title: req.headers.title,
             body: req.headers.body,
-            icon: 'https://drive.google.com/file/d/1owrjULeYG80iHdoWjl-d1z0USF9cjGqf/view?usp=sharing',
+            icon: 'wow_logo.png',
             info: req.headers.info
         },
         notification: {
