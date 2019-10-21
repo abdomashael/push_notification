@@ -17,7 +17,6 @@ router.get('/', function (req, res, next) {
         data: {
             title: req.headers.title,
             body: req.headers.body,
-            icon: 'wow_logo',
             info: req.headers.info
         },
         notification: {
